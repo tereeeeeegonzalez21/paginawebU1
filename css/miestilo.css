@@ -1,0 +1,10 @@
+body{
+	padding-left: 11em;
+	font-family: Georgia, "Times New Roman",
+		Times, serif;
+	background-color: #ff7f50
+}
+table{
+	border: 1px solid black;
+	align-content: center; 
+}

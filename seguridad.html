@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap/css/bootstrap.min.css">
+	<title>Seguridad</title>
+  <img src="images/segu.jpg">
+
+</head>
+<body>
+<div class="jumbotron">
+      <h1 class="display-4">¿Qué es la seguridad de sitios web? </h1>
+    <p class="lead">¡Internet es un sitio peligroso! Con mucha frecuencia escuchamos sobre sitios web que dejan de estar disponibles debido a ataques de denegación de servicio, o presentan información modificada (y con frecuencia dañada) en sus páginas de inicio. En otros casos de alto nivel, millones de contraseñas, direcciones de correo electrónico y detalles de tarjetas de crédito han sido filtrados al dominio público, exponiendo a los usuarios del sitio web tanto a bochorno personal como a riesgo finaciero.
+    El propóisto de la seguridad web es prevenir ataques de esta (o de cualquier otra) clase. Mas formalmente, la seguridad es la acción/práctica de proteger sitios web del acceso, uso, modificación, destrucción o interrupción, no autorizados.
+    La seguridad de sitios web eficaz requiere de esfuerzos de diseño a lo largo de la totalidad del sitio web: en tu aplicación web, en la configuración del servidor web, en tus políticas para crear y renovar contraseñas, y en el código del lado cliente. Al mismo tiempo que todo esto suena muy inquietante, la buena noticia es que si estás usando un framework web de lado servidor, es casi seguro que habilitará por defecto mecanismos de defensa robustos y bien pensados contra gran cantidad de los ataques más comunes. Otros ataques pueden mitigarse por medio de la configuración de tu servidor web, por ejemplo habilitando HTTPS. Finalmente, hay herramientas de escaneado de vulnerabilidades disponibles públicamente que pueden ayudarte a averiguar si has cometido algún error obvio.</p>
+  <hr class="my-4">
+  <div class="jumbotron">
+      <h2 class="display-4">Amenazas contra la seguridad de sitios web </h2>
+    <p>XSS es un término que se usa para describir una clase de ataques que permiten al atacante inyectar scripts de lado cliente, a través del sitio web, hasta los exploradores de otros usuarios. Como el código inyectado va del servidor del sitio al explorador, se supone de confianza, y de aquí que pueda hacer cosas como enviar al atacante la cookie de autorización al sitio del usuario. Una vez que el atacante tiene la cookie pueden iniciar sesión en el sitio como si fuera el verdadero usuario y hacer cualquier cosa que pueda hacer éste. Dependiendo de que sitio sea, esto podría incluir acceso a los detalles de su tarjeta de crédito, ver detalles de contactos o cambiar contraseñas, etc.
+
+    Hay dos aproximaciones principales para conseguir que el sitio devuelva scripts inyectados al explorador — se conocen como vulnerabilidades XSS reflejadas y persistentes.
+    Una vulnerabilidad XSS reflejada ocurre cuando contenido del usuario que se pasa al servidor se devuelve inmediatamente y sin modificar par que los muestre el explorador — ¡cualquier script en el contenido original del usuario se ejecutará cuando se cargue una nueva página!
+    
+    Una vulnerabilidad XSS persistente es aquella en la que el script malicioso se almacena en el sitio web y luego más tarde se vuelve a presentar en pantalla sin modificar para que otros usuarios lo ejecuten involuntariamente. Por ejemplo, un foro de discusión que accepta comentarios que contengan HTML sin modificar, podría almacenar un script malicioso de un atacante. Cuando se muestren los comentarios se ejecutará el script y enviará al atacante la información requerida para acceder a la cuenta del usuario. Esta clase de ataque es extremadamente popular y muy potente, porque el atacante no tiene que tener ninguna relación directa con las víctimas.</p>
+  <p class="lead">
+    <a class="btn btn-primary btn-lg" href="https://developer.mozilla.org/es/docs/Learn/Server-side/Primeros_pasos/seguridad_sitios_web" role="button">Leer más acerca del tema</a>
+  </p>
+</div>
+<img src="images/10seg.png">
+
+<div class="accordion" id="accordionExample">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h2 class="mb-0">
+        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          ¿Qué medidas de seguridad debemos ejecutar para proteger una página Web?
+        </button>
+      </h2>
+    </div>
+
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+      <div class="card-body">
+      Que las políticas del proveedor de hosting incluyan lineamientos que salvaguarden la colectividad de todos los sitios web alojados en un solo servidor, por ejemplo:
+ <ul>
+      <li>Notificar a los propietarios de webs de infecciones en sus páginas.</li>
+      <li>Establecer límites a los sitios web para realizar los ajustes necesarios en caso de infecciones.</li>
+      <li>Prohibir sitios con contenido pornográfico y para adultos.
+      .</li>
+ </ul>
+
+      Proteger la integridad del código es lo mismo que tomar las medidas necesarias para que hackers no modifiquen el código de los archivos que conforman tu página web o la base de datos con el fin de utilizar tu sitio web para extraer información sensible de los usuarios que la visitan, propagar malwares o simplemente “tumbar un servidor”.
+
+      Monitorear tu página web con frecuencia es un arma muy efectiva para detectar ataques, intentos de intrusiones, intentos de inyección de código, archivos corruptos o infectados, etc…
+      Existen múltiples soluciones automatizadas que permiten ahorrarnos tiempo, pero sobre todo que hacen las veces de la primera trinchera defensiva en la batalla contra ataques digitales.
+      </div>
+    </div>
+  </div>
+  
+  
+<h1>Paginas Web</h1>
+
+    <!-- Para Carrusel -->
+    <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner active">
+    <div class="carousel-item active" data-interval="10000">
+      <img src="images/caru1.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item" data-interval="2000">
+      <img src="images/caru2.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item" data-interval="3000">
+      <img src="images/caru3.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+</body>
+</html>
